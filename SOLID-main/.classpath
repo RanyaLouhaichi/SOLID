@@ -6,5 +6,6 @@
 	<classpathentry kind="src" path="LSP/src"/>
 	<classpathentry kind="src" path="OCP/src"/>
 	<classpathentry kind="src" path="SRP/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

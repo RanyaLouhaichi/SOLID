@@ -1,6 +1,6 @@
 package com.directi.training.lsp.exercise;
 
-public class ElectronicDuck extends Duck
+public class ElectronicDuck implements IDuck
 {
     private boolean _on = false;
 
@@ -10,7 +10,7 @@ public class ElectronicDuck extends Duck
         if (_on) {
             System.out.println("Electronic duck quack...");
         } else {
-            throw new RuntimeException("Can't quack when off");
+            System.out.println("Electronic duck is off, no sound.");
         }
     }
 
@@ -18,9 +18,9 @@ public class ElectronicDuck extends Duck
     public void swim()
     {
         if (_on) {
-            System.out.println("Electronic duck swim");
+            System.out.println("Electronic duck swims...");
         } else {
-            throw new RuntimeException("Can't swim when off");
+            System.out.println("Electronic duck is off, cannot swim.");
         }
     }
 
